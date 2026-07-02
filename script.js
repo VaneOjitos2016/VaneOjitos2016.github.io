@@ -2,7 +2,7 @@ const DEFAULT_SETTINGS = {
   personName: "Vanesa",
   signature: "Con carino",
   whatsappNumber: "51917726087",
-  metAt: "2026-06-30T20:47"
+  metAt: "2026-06-02T00:00"
 };
 
 const STORAGE_KEYS = {
