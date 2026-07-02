@@ -290,7 +290,6 @@ function bindEvents() {
   });
 
   document.querySelector("#randomPlan").addEventListener("click", pickRandomPlan);
-  document.querySelector("#addMemory").addEventListener("click", addMemory);
   document.querySelector("#openSettings").addEventListener("click", openSettings);
   document.querySelector("#saveSettings").addEventListener("click", saveSettings);
   document.querySelector("#resetPuzzle").addEventListener("click", resetPuzzle);
@@ -410,7 +409,7 @@ function renderTimeline() {
     };
   });
 
-  const memories = [...customMemories, ...manifestMemories, ...doneMemories]
+  const memories = [...manifestMemories]
     .filter(Boolean)
     .sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")));
 
